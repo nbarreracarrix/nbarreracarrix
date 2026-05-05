@@ -13,8 +13,11 @@ on:
       
 jobs:
   generate:
+    permissions: 
+      contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
+
     steps:
       # Step 1: Checkout the repository
       - name: Checkout Repository
